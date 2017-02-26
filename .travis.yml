@@ -18,6 +18,7 @@ before_install:
 install:
   - npm list -g --depth=0
   - npm install -g npm@latest
+  - sudo npm install -g angular/cli@latest
   - npm install
   - ls
   
