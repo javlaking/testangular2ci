@@ -16,13 +16,10 @@ before_install:
   - export CHROME_BIN=chromium-browser
   - export DISPLAY=:99.0
 install:
-  - npm list -g --depth=0
   - npm install -g npm@latest
-  - npm list -g --depth=0
   - npm install -f -g @angular/cli@latest
   - npm install --save-dev @angular/cli@latest
   - npm install
-  - ls
   
 
 before_script:
