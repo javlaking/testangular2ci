@@ -2,7 +2,7 @@ sudo: required
 dist: trusty
 language: node_js
 node_js:
-  - '6.10.0'
+  - '5.12.0'
 
 addons:
 apt:
@@ -15,7 +15,6 @@ apt:
 before_install:
   - export CHROME_BIN=chromium-browser
   - export DISPLAY=:99.0
-  - "npm install -g npm@latest"
 install:
   - npm install -g angular-cli
   - npm install -g karma
