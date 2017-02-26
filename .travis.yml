@@ -20,8 +20,10 @@ install:
   - npm install -g -f angular-cli@latest
   - npm install -g karma
   - npm install
+  - ls
 
 before_script:
+- ls
 - ng build
 
 script: 
