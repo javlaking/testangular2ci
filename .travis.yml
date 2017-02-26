@@ -10,16 +10,17 @@ apt:
   packages:
     - google-chrome-stable
     - google-chrome-beta
-
+services:
+  - selenium
 before_install:
   - export CHROME_BIN=chromium-browser
   - export DISPLAY=:99.0
 install:
   - npm list -g --depth=0
   - npm install -g npm@latest
-  - npm install -g angular/cli
   - npm install
   - ls
+  
 
 before_script:
   - ng new projectname
