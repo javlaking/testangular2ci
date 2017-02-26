@@ -3,7 +3,8 @@ dist: trusty
 language: node_js
 node_js:
   - '7.6.0'
-
+os:
+  - windows
 addons:
 apt:
   sources:
