@@ -23,8 +23,9 @@ install:
   - ls
 
 before_script:
-- ls
-- ng build
+  - ng new projectname
+  - cd projectname
+  - ng build
 
 script: 
 - xvfb-run karma start config/karma.conf.js --single-run
