@@ -2,7 +2,7 @@ sudo: required
 dist: trusty
 language: node_js
 node_js:
-  - '7.6.0'
+  - '6'
 addons:
 apt:
   sources:
@@ -17,6 +17,7 @@ before_install:
 install:
   - npm list -g --depth=0
   - npm install -g npm@latest
+  - npm install -g angular/cli
   - npm install
   - ls
 
