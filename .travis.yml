@@ -16,7 +16,8 @@ before_install:
   - export DISPLAY=:99.0
 install:
   - npm list -g --depth=0
-  - npm install -g angular-cli
+  - npm install -g npm@latest
+  - npm install -g angular-cli@latest
   - npm install -g karma
   - npm install
 
