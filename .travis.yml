@@ -26,4 +26,4 @@ before_script:
   - ng build
 
 script: 
-- xvfb-run karma start config/karma.conf.js --single-run
+- xvfb-run ng test
